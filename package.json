@@ -1,0 +1,16 @@
+{
+  "name": "ipaddress",
+  "version": "1.0.0",
+  "description": "get ip address on webpage and server",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "deepak",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}

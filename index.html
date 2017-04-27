@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Get Ip Address</title>
+    <script src="./angular.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdn.socket.io/socket.io-1.3.5.js"></script>
+    <script src="./socket.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="./app.js"></script>
+    <script src="./chatSocket.js"></script>
+    <style type="text/css">
+    	.well{
+    		padding:6px;
+    	}
+    	.container{
+    		margin-left:0px;
+    	}
+    </style>
+</head>
+
+<body ng-app="chatapp" ng-controller="maincontroller" class="well" style="font-family:Times New Roman;">
+	<div class="well" style="background-color:#4267b2">
+		<h1 style="color:white">IP ADDRESS OF CONNECTED USER</h1>
+	</div>
+	<div class="container">
+		<div class="row">
+		    <div class="col-md-4 col-sm-4">
+				<div class="row">
+					<h3 class="well col-md-12 col-sm-12 " style="margin-bottom:0;background-color:#4267b2;color:white">IP ADDRESS</h3>
+					<div class="col-md-12 col-sm-12 well" style="background-color:white">
+						<div ng-repeat="d in data">
+						<p>{{d.user}}</p>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</div>	
+	</div>
+</body>
+</html>
